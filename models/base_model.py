@@ -63,5 +63,5 @@ class BaseModel:
                     res[key] = value.isoformat()
                 else:
                     res[key] = value
-        res['class'] = self.class.name
+        res['class'] = self.__class__.__name__
         return res
